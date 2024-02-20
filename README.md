@@ -98,5 +98,5 @@ It will download C1-form images for a particular URL (Polling station) to the ta
 Run this command to download scanned C1-form for all polling station
 
 ```
-python main.py --task extract-image  --url <URL> --target_path <TARGET_PATH> 
+python main.py --task extract-image --target_path <TARGET_PATH> 
 ```
