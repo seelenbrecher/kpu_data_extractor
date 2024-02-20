@@ -11,8 +11,6 @@ class KPUClient:
             with open(f'urls.json', 'r') as f:
                 for step, x in enumerate(f):
                     self.urls.append(x.strip())
-                    if step == 100:
-                        break
         except OSError in e:
             print(f"Error reading urls.json = {e}")
 
