@@ -1,13 +1,13 @@
 # Indonesian Presidential Election 2024 Data
 
-This repository consist of Indonesian Presidential Election 2024 dataset. The dataset consists of the final vote results per polling station.
+This repository consists of Indonesian Presidential Election 2024 dataset. The dataset consists of the final vote results per polling station.
 
 ## Files
 
 The dataset can be obtained [here](https://drive.google.com/drive/folders/1rf9uyAhKSJSwMmq4nWY4M3xI0rdDWEAP?usp=sharing)
 
 ### Voting Results File
-The voting results can be found under `raw_district_counts_<date>.json`, where `date` is the date the dataset was extracted.
+The voting results can be found under `raw_district_counts_<date>.json`, where `date` is the date the data were extracted.
 The dataset consist of multiple lines of json. Each json follows this structure
 ```
 {
@@ -47,12 +47,12 @@ The dataset consist of multiple lines of json. Each json follows this structure
 	}
 }
 ```
-Some of the value might be None or null, which indicates that the voting results for the particular polling station yet to be uploaded.
+Some of the values might be None or null, which indicate that the voting results for the particular polling station has yet to be uploaded.
 
 The API also provides images link to the C1 form under `images` key.
 
 ### URLs
-We also provides list of all urls API to obtain the above KPU dataset under `urls.json`
+We also provide list of all urls API to obtain the above KPU dataset under `urls.json`
 
 ## Installation
 create virtualenv
@@ -67,7 +67,7 @@ pip install -r requirements.txt
 
 ## Download files
 You can download the above files by following the link, or using gdown.
-You just need to find the file id from drive and run the following command:
+You just need to find the file id from gdrive and run the following command:
 ```
  gdown https://drive.google.com/uc\?id\=<FILE_ID>
 ```
@@ -79,8 +79,9 @@ For `urls.json`, run the following command (this command is neccessary to run da
 ```
 https://drive.google.com/file/d/1cUWd0OyBprz6TNJHxceyEBLRCstzU1VY/view?usp=drive_link
 ```
+
 ## Obtain the dataset
-Run this command to call the API and obtain the dataset:
+If you wish to recollect the most updated data, run this command to call the API and obtain the dataset:
 ```
 python main.py --task collect-data --target_file <TARGET_FILE>
 ```
