@@ -100,3 +100,6 @@ Run this command to download scanned C1-form for all polling station
 ```
 python main.py --task extract-image --target_path <TARGET_PATH> 
 ```
+
+## Data Statistics
+We also provide data statistics and some insights between data extracted on 18th and 20th February 2024 under `notebooks/statistics.ipynb`
